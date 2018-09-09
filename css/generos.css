@@ -1,0 +1,59 @@
+body {
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+/* HEADER */ 
+header {
+	background-color: #4EB24D;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+	.fa-chevron-left, .fa-search { /*botón atrás y botón buscar*/
+		font-size: 1.2rem;
+		color: white !important;
+	}
+
+	h1 {
+		color: white;
+		font-size: 2rem;
+		margin-bottom: 0px;
+		font-family: 'Sorts Mill Goudy', serif;	
+	}
+
+
+
+/* MAIN */
+.container-fluid {
+
+}	
+	.btn {
+		border: .5px solid green;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+	}
+	}
+	a:active {
+		text-decoration: none;
+	}
+	button {
+		margin-left: 0px;
+		margin-bottom: 1vh;
+		border: 1px solid green;
+	}
+		p {
+			display: inline-block;
+			margin-left: 3vw;
+			margin-bottom: 0px;
+		}
+
+
+i {
+	font-size: 30px;
+	color: #0FA900;
+}
+	.fa-undo {
+		color: white !important;
+		font-size: 20px !important;
+	}
+
+
+
+

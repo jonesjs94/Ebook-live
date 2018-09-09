@@ -1,0 +1,63 @@
+body {
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+a {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+/* HEADER */ 
+
+header {
+	position: sticky;
+ 	top: 0;
+	background-color: #4EB24D;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+	#atrás {
+		font-size: 1.2rem;
+		color: white;
+	}
+
+	h1 {
+		color: white;
+		font-size: 2rem !important;
+		margin-bottom: 0px;
+		font-family: 'Sorts Mill Goudy', serif;	
+	}
+
+/* MAIN */
+
+.contenedor-libro {
+	display: flex;
+	flex-wrap: wrap;
+}
+	.libro-nov {
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+		margin: 10px;
+	}	
+		.img-libro-nov {
+			max-width: 160px;
+			/*max-height: 355px;*/
+		    display: block;
+		   	margin-left: auto;
+		   	margin-right: auto; 
+		}
+		.nombre-libro-nov{
+			font-size: 17px;
+			margin-bottom: 0px;				
+			color: black;
+			max-width: 140px;			
+		}
+		.autor-nov{
+			font-size: 14px;
+			color: #787878;
+			margin-bottom: 0px;
+			max-width: 140px;
+		}
+		.precio-libro {
+			margin: 0px;
+		}

@@ -1,0 +1,68 @@
+body {
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+a{
+	color: white;
+  text-decoration: none;
+}
+a:active {
+	color: white;
+    text-decoration: none;
+}
+/* HEADER */ 
+
+header {
+	background-color: #4EB24D;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+	#atrás {
+		font-size: 1.2rem;
+		color: white;
+	}
+
+	h1 {
+		color: white;
+		font-size: 2rem;
+		margin-bottom: 0px;
+		font-family: 'Sorts Mill Goudy', serif;	
+	}
+
+/* MAIN */
+
+#info-libro {
+	margin: 0px;
+}
+	#título {
+		font-size: 1.2rem;
+	}
+	#autor {
+		font-size: 0.9rem;
+		opacity: .7;
+		margin-bottom: 0px;
+	}
+	#fecha-lanzamiento {
+		font-size: 0.7rem;
+		opacity: .7;
+		color: 
+	}
+	#favorito {
+		text-align: center;
+	}
+	#rutaLibro {
+		display: none;
+	}
+
+
+.btn {
+	margin-top: 2vh;
+	text-align: center;
+	box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.4);
+	color: white;
+	font-family: 'Open Sans', serif !important ; 
+}
+
+
+p {
+	font-family: 'Open Sans', serif !important ; 
+}

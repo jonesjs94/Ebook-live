@@ -1,0 +1,44 @@
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+}
+
+#deseos {
+	display: flex;
+	flex-wrap: wrap;
+}
+	.libro-deseo {
+		display: flex;
+		width: 350px;
+		margin: 2vh;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+		.card-body-deseo {
+			padding: 1vw;
+			background-color: white;
+			width: 70%;
+		}
+			.autor-deseo {
+				font-size: 15px;
+				color: #787878;
+			}
+			.card-text-deseo {
+				font-size: 20px;
+				margin-bottom: 0px;
+			}
+
+			.precio-libro-deseo {
+				margin-right: 5px;
+				font-size: 20px;
+				margin-bottom: 0px;
+			}
+
+
+

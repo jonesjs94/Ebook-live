@@ -1,0 +1,164 @@
+body {
+	font-family: 'Sorts Mill Goudy', serif;
+	  background-color: #f5f5f5;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+/* HEADER */
+
+h1 { /* TÍTULO APP */
+	display: inline-block;
+	font-size: 37px;
+	text-align: center;
+}
+	#ebook {
+		color: green;
+	}
+
+header label {	/*MENU DESPLEGABLE*/
+    margin: 0px;
+}
+header label:active {
+    background-color: black;
+}
+	.fa-bars { /* ICONO MENÚ */
+		font-size: 35px;
+		color: green;
+	}
+	#menuCheckbox {
+	    display: none;
+	}
+	#menuCheckbox:checked ~ .menu{
+    margin: 0px;
+	}
+
+.menu {
+    position: absolute;
+    background: white;
+    width: 70%;
+    margin-left: -75%;
+    transition: all 0.2s;
+    z-index: 1;
+    height: 100vh;
+}
+	.menu ul {
+	    margin: 0;
+	    list-style: none;
+	    padding: 0;
+	}
+		.menu a {
+		    color: black;
+		    text-decoration: none;
+		    display: flex;
+		    justify-content: space-between;
+		    border-bottom: 1px solid rgba(0,0,0,0.3);
+		}
+		.menu a:active {
+	    background: rgba(0,0,0,0.3);
+		}
+		.menu li {
+		    font-size: 6vw;
+		}
+
+#buscar {	/* BOTÓN BÚSQUEDA DE LIBROS */
+  float: right;
+  border: none;
+}
+	#btn-buscar {
+		font-size: 20px;
+	}
+
+
+#nav-pequeña {  /* NAV DE ESTANTERÍA Y LISTA DE DESEOS */
+	background-color: white;
+}
+
+
+/* MAIN */
+
+h2 {   /* INICIAR, CONTINUAR, TERMINADOS */
+	margin-left: 1vh;
+	margin-bottom: 0px;
+}
+	#iniciar, #continuar-leyendo, #terminados {
+		overflow-x: scroll;
+	    overflow-y: hidden; 
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+
+.contenedor-libro {
+    display: flex;
+    flex-direction: row;
+}
+	.libro {
+		margin-left: 2vw;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+	}
+	.contLibro {
+		max-width: 120px;
+	}
+			.autor {
+				font-size: 14px;
+				color: #787878;
+				margin-bottom: 0px;
+  				max-width: 90px;				
+			  	white-space: nowrap;				
+ 			 	overflow: hidden;
+  				text-overflow: ellipsis;
+			}
+			.card-body {
+				padding: 5px;
+				background-color: white;
+				border-bottom-right-radius: 5%;
+				border-bottom-left-radius: 5%;
+			}
+			.nombre-libro {
+				font-size: 16px;
+				margin-bottom: 0px;				
+				color: black;			
+			}
+			.img-libro {
+				max-width: 120px;
+				max-height: 160px;
+		 	    display: block;
+	    		margin-left: auto;
+	   			margin-right: auto; 
+			}
+			.progress {
+				padding: 0px 5px 0px 5px;
+			}
+			.precio {
+				font-size: 14px;
+				color: #021ACA;
+				margin-bottom: 0px;
+			}
+			.direct {
+				display: none;
+			}
+
+/* FOOTER */
+
+footer { /* BIBLIOTECA Y TIENDA */
+	position: sticky;
+ 	bottom: 0;
+ 	background-color: white;
+ 	text-align: center;
+}
+		.footer-menu {
+			display: flex;
+			flex-direction: row;
+		 	border-top: 1px solid;
+		} 
+		.navegador {
+			text-decoration: none;
+			color: black;
+		}
+		.active {
+			color: blue;
+		}
+

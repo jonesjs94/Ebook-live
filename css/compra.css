@@ -1,0 +1,33 @@
+
+
+a {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+/* HEADER */ 
+
+header {
+	
+ 	top: 0;
+	background-color: #4EB24D;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+	#atrás {
+		font-size: 1.2rem;
+		color: white;
+	}
+
+	h1 {
+		color: white;
+		font-size: 2rem;
+		margin-bottom: 0px;
+		font-family: 'Sorts Mill Goudy', serif;	
+	}
+
+
+#aviso {
+	visibility: hidden;
+	}

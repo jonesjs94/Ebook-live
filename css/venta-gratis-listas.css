@@ -1,0 +1,60 @@
+body {
+	font-family: 'Sorts Mill Goudy', serif;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* HEADER */ 
+
+header {
+	background-color: #4EB24D;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+	#atrás {
+		font-size: 1.2rem;
+		color: white;
+	}
+
+	h1 {
+		color: white;
+		font-size: 2rem;
+		margin-bottom: 0px;
+		font-family: 'Sorts Mill Goudy', serif;	
+	}
+
+/* MAIN */
+
+.number {
+	display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.libro-tv {
+	display: flex;
+	width: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+	.img-libro-tv {
+		max-width: 120px;
+		max-height: 160px;
+	}
+	.carta-tv {
+		padding: 1vw;
+		background-color: white;
+		width: 70%;
+	}
+		.autor-tv {
+			font-size: 15px;
+			color: #787878;
+		}
+		.carta-texto-tv {
+			font-size: 20px;
+			margin-bottom: 0px;
+		}
+		.precio-libro-tv {
+			text-align: right;
+			margin-right: 5px;
+		}

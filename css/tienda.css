@@ -1,0 +1,79 @@
+
+/* HEADER */
+
+#navegador {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#header {
+	background-color: #89EF7E;
+}
+
+#navegador {
+
+}
+	.animate {	 /* ANIMACIÓN PRESIONAR BOTÓN */
+		transition: all 0.1s;
+		-webkit-transition: all 0.1s;
+	}
+	.item-navegador {
+		font-size: 18px;
+	}
+	.item-navegador:active {
+		background-color: #89E588;
+	}
+		#top-ventas {
+			background-color: #6AA569;
+			border-radius: 50px 11px 11px 50px;
+
+			margin: 2px;
+			color: white;
+			text-shadow: 0px -2px #669644;
+		}
+		#top-gratis {
+			background-color: #6AA569;
+			text-shadow: 0px -2px #669644;			
+			border-radius: 11px 50px 50px 11px;
+			margin: 2px;
+			color: white;
+		
+		}
+
+		#novedades {
+			background-color: #6AA569;
+			text-shadow: 0px -2px #669644;
+			margin: 2px;
+			color: white;
+
+		}
+
+		#géneros {
+			background-color: #6AA569;
+			text-shadow: 0px -2px #669644;			
+			text-align: center;
+			width: 330px;
+			margin-top: 3px;
+		    margin-left: auto;
+    		margin-right: auto;			
+			border-radius: 50px;
+			color: white;
+
+		}
+/* SOMBRA BOTONES: box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */	
+
+/* MAIN */
+
+.contenedor-género {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden; 
+    padding: 2vh;
+}
+
+.libro {
+	margin-right: 1vh;
+}
+
