@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Novela romántica</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+
+	<!-- CSS Bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- CSS local -->
+	<link rel="stylesheet" type="text/css" href="css\novedades.css">
+	<link rel="stylesheet" type="text/css" href="css\index.css">
+</head>
+
+<body>
+	<header>
+		<div id="cabecera" class="container-fluid">
+			<div class="row py-2">
+				<div class="col-2 mt-2"><a id="atrás" href="generos.html"><i class="fas fa-undo"></i></a></div>
+				<div class="col-10 mt-1"><h1 id="h1">Novela romántica</h1></div>
+			</div>
+		</div>
+	</header>
+<body onload="crearLibro()">
+	<main class="contenedor-libro" id="contenedor-libro">
+
+	</main>
+
+
+
+		<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+	<!-- Popper Bootstrap 4 -->
+	<script src="js/popper.min.js"></script>
+
+	<!-- Latest compiled and minified Bootstrap 4 JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome mini-img -->
+	<script src="js/solid.js"></script>
+	<script src="js/fontawesome.js"></script>
+		<!-- Firebase -->
+	<script src="js/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyC9dOBWvcJehatV2uykw6m_nkktlNjcHtk",
+	    authDomain: "ebook-live-1994.firebaseapp.com",
+	    databaseURL: "https://ebook-live-1994.firebaseio.com",
+	    projectId: "ebook-live-1994",
+	    storageBucket: "",
+	    messagingSenderId: "849375582638"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+		<script src="js/categoriasGenero.js"></script>
+</body>	
+</html>

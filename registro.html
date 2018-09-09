@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ebook Live</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+
+	<!-- CSS Bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- CSS local -->
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+  <body class="text-center">
+    <div class="form-signin">
+      <img class="mb-4" src="https://firebasestorage.googleapis.com/v0/b/ebook-live-1994.appspot.com/o/ebookLogo.jpg?alt=media&token=0e92e9d6-5c39-4a9e-823e-9a8c43cde15a" alt="" width="110" height="90">
+    	<h1 class="h3 mb-3 font-weight-normal">Completa el formulario</h1>
+        
+        <label for="nombre" class="sr-only">Nombre</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Nombre" required>
+        
+        <label for="apellido" class="sr-only">Apellido</label>
+        <input type="text" id="apellido" class="form-control" placeholder="Apellido" required>        
+        
+        <label for="email" class="sr-only">Dirección de correo</label>
+        <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required autofocus>
+        
+        <label for="contraseña" class="sr-only">Contraseña</label>
+        <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" required>
+        
+        <p id="avisoRegistro"><strong>The email adress is badly formated</strong></p>
+        <button id="btnRegistro" class="btn btn-lg btn-success btn-block" onclick="registrar()">Registrarse</button>
+      
+      
+      <p class="mt-2 mb-3 text-muted">&copy;Ebook Live 2017-2018</p>
+      
+    </div>
+
+		<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+	<!-- Popper Bootstrap 4 -->
+	<script src="js/popper.min.js"></script>
+
+	<!-- Latest compiled and minified Bootstrap 4 JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome mini-img -->
+	<script src="js/solid.js"></script>
+	<script src="js/fontawesome.js"></script>
+		<!-- Firebase -->
+	<script src="js/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyC9dOBWvcJehatV2uykw6m_nkktlNjcHtk",
+	    authDomain: "ebook-live-1994.firebaseapp.com",
+	    databaseURL: "https://ebook-live-1994.firebaseio.com",
+	    projectId: "ebook-live-1994",
+	    storageBucket: "ebook-live-1994.appspot.com",
+	    messagingSenderId: "849375582638"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+		<!-- Local js -->
+	<script src="js/login.js"></script>
+</body>	
+</html>

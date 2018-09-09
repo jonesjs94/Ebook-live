@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ebook Live</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+
+	<!-- CSS Bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+	<!-- CSS local -->
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+  <body class="text-center">
+    <div class="form-signin">
+      <img class="mb-4" src="https://firebasestorage.googleapis.com/v0/b/ebook-live-1994.appspot.com/o/ebookLogo.jpg?alt=media&token=0e92e9d6-5c39-4a9e-823e-9a8c43cde15a" alt="" width="110" height="90">
+      <h1 class="h3 mb-3 font-weight-normal">Ebook Live</h1>
+
+      <label for="email" class="sr-only">Dirección de correo</label>
+      <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required autofocus>
+
+      <label for="password" class="sr-only">Contraseña</label>
+      <input type="password" id="contraseña" class="form-control" placeholder="Contraseña" required>
+
+      <button id="btnEntrar" class="btn btn-lg btn-success btn-block mb-2" onclick="entrar()">Entrar</button>
+      <p>¿No tenés cuenta? <a href="registro.html">Registrate acá</a></p>
+
+	<p id="avisoLogueo"><strong>The email adress is badly formated</strong></p>
+
+      <p class="mt-5 mb-3 text-muted">&copy;Ebook Live 2017-2018</p>
+    </div>
+
+		<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+	<!-- Popper Bootstrap 4 -->
+	<script src="js/popper.min.js"></script>
+
+	<!-- Latest compiled and minified Bootstrap 4 JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome mini-img -->
+	<script src="js/solid.js"></script>
+	<script src="js/fontawesome.js"></script>
+		<!-- Firebase -->
+	<script src="js/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyC9dOBWvcJehatV2uykw6m_nkktlNjcHtk",
+	    authDomain: "ebook-live-1994.firebaseapp.com",
+	    databaseURL: "https://ebook-live-1994.firebaseio.com",
+	    projectId: "ebook-live-1994",
+	    storageBucket: "ebook-live-1994.appspot.com",
+	    messagingSenderId: "849375582638"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	
+		<!-- Local js -->
+	<script src="login.js"></script>
+</body>	
+</html>

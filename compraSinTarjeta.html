@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ebook Live</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+
+  <!-- CSS Bootstrap 4 -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- CSS local -->
+  <link rel="stylesheet" type="text/css" href="css\compra.css">
+</head>
+
+<body>
+<header>
+  <div id="cabecera" class="container-fluid">
+    <div class="row py-2">
+      <div class="col-2 mt-1"><a id="atrás" href="tienda.html"><i class="fas fa-undo"></i></a></div>
+      <div class="col-8 mt-1"><h1>Adquirir libro</h1></div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-12 mt-3">
+
+<article class="card mt-4">
+  <div class="card-body p-2">
+  <p> <img src="css/pay-visa.png"> 
+      <img src="css/pay-mastercard.png"> 
+     <img src="css/pay-american-ex.png">
+  </p>
+  <p id="aviso"class="alert alert-success"></p>
+  
+  <div role="form"> <!-- NOMBRE DEL USUARIO EN LA TARJETA -->
+    <div class="form-group">
+    <label for="nombreTarjeta">Nombre completo (de tu tarjeta)</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-user"></i></span>
+        </div>
+        <input type="text" class="form-control" id="nombreTarjeta" placeholder="Ej: Jonathan M Guerreiro" required="">
+    </div>
+  </div>
+  
+  <div class="form-group"> <!-- NÚMERO DE LA TARJETA DE CRÉDITO -->
+    <label for="cardNumber">Número de la tarjeta de crédito</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+        </div>
+        <input type="text" class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX"  autocompletetype="cc-number" required>
+    </div> 
+  </div> 
+  
+    <div class="row"> <!-- FECHA DE EXPIRACIÓN DE LA TARJETA -->
+      <div class="col-6">
+        <label for="expiración">Expiración</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+            </div>
+            <input type="text" class="form-control" id="expiración" placeholder="XX/XXXX"  autocompletetype="cc-exp" required>
+        </div> 
+      </div>
+      
+      <div class="col-4 pl-0"> <!-- "Card Verification Value" DE LA TARJETA -->
+        <label for="numCVV">CVV</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+            </div>
+            <input type="text" class="form-control" id="numCVV" placeholder="XXXX"  autocompletetype="cc-csc" required>
+        </div> 
+      </div> 
+    </div>
+    
+    </div> <!--BOTÓN PARA CARGAR TARJETA Y TERMINAR LA COMPRA -->
+  </div> 
+
+</article> 
+  <div class="container-fluid mt-3 p-0">
+        <button class="subscribe btn btn-primary btn-block" type="button" id="continuar" onclick="escribirDatosTarjeta()">Adquirir Ebook</button>
+  </div>
+
+    <!-- jQuery library -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+
+  <!-- Popper Bootstrap 4 -->
+  <script src="js/popper.min.js"></script>
+
+  <!-- Latest compiled and minified Bootstrap 4 JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Font Awesome mini-img -->
+  <script src="js/solid.js"></script>
+  <script src="js/fontawesome.js"></script>
+    <!-- Firebase -->
+  <script src="js/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC9dOBWvcJehatV2uykw6m_nkktlNjcHtk",
+      authDomain: "ebook-live-1994.firebaseapp.com",
+      databaseURL: "https://ebook-live-1994.firebaseio.com",
+      projectId: "ebook-live-1994",
+      storageBucket: "ebook-live-1994.appspot.com",
+      messagingSenderId: "849375582638"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
+    <!-- Local js -->
+  <script src="js\compraSinTarjeta.js"></script>
+</body> 
+</html>

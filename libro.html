@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Libro</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS Bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+	<!-- Google Font. Open Sans -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!-- CSS local -->
+	<link rel="stylesheet" type="text/css" href="css/libro.css">
+
+
+
+</head>
+<body onload="cargarLibro()">
+	<header>
+		<div id="cabecera" class="container-fluid">
+			<div class="row py-2">
+				<div id="atrás" class="col-2 mt-2"><i class="fas fa-undo"></i></div>
+				<div class="col-8 mt-1"><h1>Ebook Live</h1></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container-fluid py-3">
+			<div id="info-libro" class="row img-thumbnail">
+				<div class="col-3 px-0"><img id="portada-libro" class="img-fluid"></div>
+				<div class="col-8">          
+					<h4 id="título"></h4>
+  			        <p id="autor" class="autor"></p>
+  			        <p id="fecha-lanzamiento" class="date"></p>
+  			    </div>
+				<div id="favorito" class="col-1 p-0"><i class="far fa-star"></i></div>
+			</div>
+
+			<div id="botones" class="container-fluid">
+				<div class="row">
+					<div id="botón-muestra" class="col-5 btn btn-success px-1 ml-2">Muestra Gratuita</div>
+					<div class="col-1"></div>
+					<div id="botón-compra" class="col-5 btn btn-info" onclick="compraLibro()"></div>
+				</div>
+			</div>
+			<hr>
+			<p id="descripción-libro"></p>
+			<hr>
+
+			<h4>Acerca del Autor</h4>
+
+			<p id="descripción-autor"></p>
+		</div>
+	</main>
+
+		<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+	<!-- Popper Bootstrap 4 -->
+	<script src="js/popper.min.js"></script>
+
+	<!-- Latest compiled and minified Bootstrap 4 JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome mini-img -->
+	<script src="js/solid.js"></script>
+	<script src="js/fontawesome.js"></script>
+		<!-- Firebase -->
+	<script src="js/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyC9dOBWvcJehatV2uykw6m_nkktlNjcHtk",
+	    authDomain: "ebook-live-1994.firebaseapp.com",
+	    databaseURL: "https://ebook-live-1994.firebaseio.com",
+	    projectId: "ebook-live-1994",
+	    storageBucket: "",
+	    messagingSenderId: "849375582638"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+		<script src="js/libro.js"></script>
+</body>
+</html>

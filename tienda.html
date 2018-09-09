@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ebook Live</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+
+	<!-- CSS Bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- CSS local -->
+	<link rel="stylesheet" type="text/css" href="css\index.css">
+	<link rel="stylesheet" type="text/css" href="css\tienda.css">	
+</head>
+
+<body onload="scifi(); ficción(); romántica(); misterio()">
+	<header>
+		<input type="checkbox" id="menuCheckbox">
+		<label for="menuCheckbox" class="px-3 py-2"><i class="fas fa-bars"></i></label>
+		<nav class="menu">
+			<ul>
+				<a href="" class="pt-1"><li class="px-2">Perfil</li></a>
+				<a href="" class="pt-1"><li class="px-2">Métodos de pago</li></a>
+				<a href="" class="pt-1"><li class="px-2">Historial de pedidos</li></a>
+				<a href="" class="pt-1"><li class="px-2">Sugerencias</li></a>
+				<a href="" class="pt-1"><li class="px-2">Publicar un libro</li></a>
+			</ul>
+		</nav> 
+		<h1 class="mx-2 px-1"><span id="ebook">Ebook</span> Live</h1>
+	<hr>
+		<div id="navegador" class="container-fluid px-0">
+			<div class="row">
+				<div class="col-4 p-0">
+					<a class="nav-link item-navegador" href="top-venta.html" id="top-ventas">Top Venta</a>
+				</div>
+				<div class="col-4 p-0">
+					<a class="nav-link item-navegador" href="novedades.html" id="novedades">Novedades</a>
+				</div>
+				<div class="col-4 p-0">
+					<a class="nav-link item-navegador" href="top-gratis.html" id="top-gratis">Top Gratis</a>
+				</div>
+			</div>
+			<div class="col-12">
+				<a class="nav-link item-navegador animate" href="generos.html" id="géneros">Géneros</a>	
+			</div>
+		</div>
+	<hr>
+	</header>
+
+	<main>
+		<section>
+			<h3>Ciencia ficción y fantasía</h3>
+			
+			<div id="libros-scifi" class="contenedor-género">
+
+			</div>	
+		</section>
+
+<hr>	
+		<section>
+			<h3>Ficción y literatura</h3>
+
+			<div id="libros-ficción" class="contenedor-género">
+
+			</div>	
+		</section>
+<hr>	
+		<section>
+			<h3>Novela romántica</h3>
+
+			<div id="libros-novela-romántica" class="contenedor-género">
+	
+			</div>	
+		</section>
+
+<hr>	
+		<section>
+			<h3>Misterio y suspenso</h3>
+
+			<div id="libros-misterio" class="contenedor-género">
+
+			</div>	
+		</section>
+	</main>
+
+	<footer>
+		<div class="footer-menu">
+			<a id="biblioteca" class="nav-link col-6 navegador" href="principal.html"><i class="fas fa-book"></i> Biblioteca</a>
+			<a id="tienda" class="nav-link col-6 navegador active" href="tienda.html"><i class="fas fa-store-alt"></i>Tienda</a>
+		</div>
+	</footer>
+
+		<!-- jQuery library -->
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+
+	<!-- Popper Bootstrap 4 -->
+	<script src="js/popper.min.js"></script>
+
+	<!-- Latest compiled and minified Bootstrap 4 JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Font Awesome mini-img -->
+	<script src="js/solid.js"></script>
+	<script src="js/fontawesome.js"></script>
+		<!-- Firebase -->
+	<script src="js/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyC9dOBWvcJehatV2uykw6m_nkktlNjcHtk",
+	    authDomain: "ebook-live-1994.firebaseapp.com",
+	    databaseURL: "https://ebook-live-1994.firebaseio.com",
+	    projectId: "ebook-live-1994",
+	    storageBucket: "",
+	    messagingSenderId: "849375582638"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+		<script src="js/tienda.js"></script>
+</body>	
+</html>
